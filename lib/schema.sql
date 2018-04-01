@@ -9,3 +9,8 @@ create table series (
     id INTEGER PRIMARY KEY,
     name TEXT
   );
+
+create table authors (
+  id INTEGER PRIMARY KEY,
+  name, TEXT
+);
