@@ -31,7 +31,7 @@ on series.subgenre_id = subgenres.id;"
 end
 
 def select_series_title_with_most_human_characters
-  "select series.title, characters.species
+  "select series.title
 from series
 join characters
 on series.id = characters.series_id
