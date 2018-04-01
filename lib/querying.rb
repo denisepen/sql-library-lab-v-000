@@ -8,7 +8,9 @@ order by books.year;"
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "Write your SQL query here"
+  "select characters.name, characters.motto
+from characters
+order by length(characters.motto) desc limit 1;"
 end
 
 
