@@ -41,5 +41,9 @@ order by max( characters.species) limit 1 ;"
 end
 
 def select_character_names_and_number_of_books_they_are_in
-  "Write your SQL query here"
+  "select characters.name, count(character_books.book_id)
+from characters
+join character_books
+on characters.id = character_books.id
+group by characters.name;"
 end
