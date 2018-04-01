@@ -19,5 +19,14 @@ create table books (
   id INTEGER PRIMARY KEY,
   title TEXT,
   year integer,
-  series_id integer  
+  series_id integer
 );
+
+create table characters (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  species text,
+  motto varchar(255),
+  series_id integer,
+  author_id integer,
+  );
