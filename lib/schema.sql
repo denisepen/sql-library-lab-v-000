@@ -35,4 +35,4 @@ create table character_books (
   id INTEGER PRIMARY KEY,
   book_id integer,
   character_id
-)
+);
