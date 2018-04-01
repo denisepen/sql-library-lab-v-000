@@ -27,7 +27,7 @@ from authors
 join series
 on authors.id = series.author_id
 join subgenres
-on series.subgenre_id = series.id;"
+on series.subgenre_id = subgenrs.id;"
 end
 
 def select_series_title_with_most_human_characters
