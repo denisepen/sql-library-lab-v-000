@@ -22,7 +22,12 @@ order by count (characters.species) desc limit 1;"
 end
 
 def select_name_and_series_subgenres_of_authors
-  "Write your SQL query here"
+  "select authors.name, subgenres.name
+from authors
+join series
+on authors.id = series.author_id
+join subgenres
+on series.subgenre_id = series.id;"
 end
 
 def select_series_title_with_most_human_characters
