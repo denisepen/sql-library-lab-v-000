@@ -28,5 +28,11 @@ create table characters (
   species text,
   motto varchar(255),
   series_id integer,
-  author_id integer,
+  author_id integer
   );
+
+create table character_books (
+  id INTEGER PRIMARY KEY,
+  book_id integer,
+  character_id
+)
